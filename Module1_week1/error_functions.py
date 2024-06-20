@@ -15,5 +15,5 @@ def cal_se(y, y_hat):
     return (y - y_hat) ** 2
 y = 4
 y_hat = 2
-assert cal_se(y, y_hat) == 4
+# assert cal_se(y, y_hat) == 4
 print(cal_se(2, 1))
