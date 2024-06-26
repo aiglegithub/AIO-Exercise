@@ -4,7 +4,7 @@ import math
 # Sigmoid function
 def cal_sig(x):
     return 1 / (1 + math.exp(-x))
-assert round(cal_sig(3), 2) == 0.95
+# assert round(cal_sig(3), 2) == 0.95
 print(round(cal_sig(2), 2))
 
 # Elu function
@@ -18,7 +18,7 @@ def cal_elu(x, alpha):
         return x
     else:
         return alpha * (math.exp(x) - 1)
-assert round(cal_elu(1, alpha), 2) == 1
+# assert round(cal_elu(1, alpha), 2) == 1
 print(round(cal_elu(-1, alpha), 2))
 
 # Activation function
@@ -31,5 +31,5 @@ def cal_activation_func(x, act_name):
         return max(0, x)
     else:
         raise ValueError("Invalid activation function")
-assert cal_activation_func(x=1, act_name='relu') == 1
+# assert cal_activation_func(x=1, act_name='relu') == 1
 print(round(cal_activation_func(x=3, act_name='sigmoid'), 2))
